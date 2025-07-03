@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/507b6e1fd4.js" crossorigin="anonymous">function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+    }
+    </script>
+</head>
+<body>
+   <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="logo"><span class="highlight">A</span>ditya</a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Aditya</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- //ABOUT------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                 <img src="phbt.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                   <h1 class="subtitle">About me</h1>
+                   <p class="me">Hi, I'm Aditya, a passionate and dedicated Software Developer with a strong foundation in Java, web development, and problem-solving. As a BTech CSE student, I am constantly exploring new technologies to build efficient and scalable solutions. <br>
+
+                    I have experience in backend development, algorithms, and freelancing projects, where I focus on creating high-performance applications. My goal is to develop innovative software solutions that make a real impact.
+                    <br>
+                    <!-- 🔹 Skills: Java, Web Development, Data Structures & Algorithms, Backend Development <br> -->
+                    <!-- 🔹 Interests: Competitive Programming, Open-Source Contributions, AI & Machine Learning <br>
+                    🔹 Looking for: Exciting job opportunities, Freelance projects, and Collaborations <br>
+                    <br> -->
+                    Let’s connect and create something amazing together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing WebInterfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Designing WebInterfaces</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>NONE</span><br></li>
+                            <li><span>None</span><br></li>
+                            <li><span>None</span><br></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2027</span><br> Btech(CSE) at ITER</li>
+                            <li><span>None</span><br></li>
+                            <li><span>None</span><br></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--............. Services.................. -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit commodi iure, facere obcaecati eius itaque! Ea sed nulla facere, velit in hic!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit commodi iure, facere obcaecati eius itaque! Ea sed nulla facere, velit in hic!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit commodi iure, facere obcaecati eius itaque! Ea sed nulla facere, velit in hic!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------Portfolio------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/XzZVM56lpLvbkYx6Zs3LZ6sltUtz9zG_1XBNlWqiyGs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDct/dXMuZ29vZ2xldXNl/cmNvbnRlbnQuY29t/L2RvY3N6L0FEXzRu/WGVua0xhd2c1MUVB/cmFHaHNXazFRekF5/bEIyNURQQS1QTy10/dlVRamZROXluaWVs/TEZPUzY3cjBCYXlS/d3pDYlh6c3A0VEJ6/S3NJbmY3TlRYUmFE/UDAtb2J5ZzdrNC1h/b2szTlhNQ2VscE1f/SkNBd0F4bDZaWWI5/TEhlWWhNSE01RVhs/NWhFNU9oblFjb3g4/MmRsMzR5cnI1dz9r/ZXk9MWxuYm44LUF6/MnF5b2pzblpGcDFE/UQ">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>sit amet consectetur adipisicing elit. Ad ea nisi voluptate omnis odit expedita totam pariatur dolorum incidunt? Autem voluptas aperiam ab quis, pariatur magnam error suscipit natus similique?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/XzZVM56lpLvbkYx6Zs3LZ6sltUtz9zG_1XBNlWqiyGs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDct/dXMuZ29vZ2xldXNl/cmNvbnRlbnQuY29t/L2RvY3N6L0FEXzRu/WGVua0xhd2c1MUVB/cmFHaHNXazFRekF5/bEIyNURQQS1QTy10/dlVRamZROXluaWVs/TEZPUzY3cjBCYXlS/d3pDYlh6c3A0VEJ6/S3NJbmY3TlRYUmFE/UDAtb2J5ZzdrNC1h/b2szTlhNQ2VscE1f/SkNBd0F4bDZaWWI5/TEhlWWhNSE01RVhs/NWhFNU9oblFjb3g4/MmRsMzR5cnI1dz9r/ZXk9MWxuYm44LUF6/MnF5b2pzblpGcDFE/UQ" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p> amet consectetur adipisicing elit. Ad ea nisi voluptate omnis odit expedita totam pariatur dolorum incidunt? Autem voluptas aperiam ab quis, pariatur magnam error suscipit natus similique?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/XzZVM56lpLvbkYx6Zs3LZ6sltUtz9zG_1XBNlWqiyGs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDct/dXMuZ29vZ2xldXNl/cmNvbnRlbnQuY29t/L2RvY3N6L0FEXzRu/WGVua0xhd2c1MUVB/cmFHaHNXazFRekF5/bEIyNURQQS1QTy10/dlVRamZROXluaWVs/TEZPUzY3cjBCYXlS/d3pDYlh6c3A0VEJ6/S3NJbmY3TlRYUmFE/UDAtb2J5ZzdrNC1h/b2szTlhNQ2VscE1f/SkNBd0F4bDZaWWI5/TEhlWWhNSE01RVhs/NWhFNU9oblFjb3g4/MmRsMzR5cnI1dz9r/ZXk9MWxuYm44LUF6/MnF5b2pzblpGcDFE/UQ" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p> sit amet consectetur adipisicing elit. Ad ea nisi voluptate omnis odit expedita totam pariatur dolorum incidunt? Autem voluptas aperiam ab quis, pariatur magnam error suscipit natus similique?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+       <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-info">
+                        <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                        <p><i class="fas fa-phone"></i> 0123456789</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="#" download class="btn1">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="contact-form">
+                     <input type="text" name="name" placeholder="Your Name" required>
+                     <input type="email" name="email" placeholder="Your Email" required>
+                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                     <span id="form-msg" style="color: lightgreen; font-size: 14px;"></span>
+                     <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+       <div class="copyright">
+        <p>Copyright © Aditya</p>
+       </div>
+    </div>
+    <script src="fc.js"></script>
+    <script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzWdDXgdOkCCMSNk4KIIpC1BJeCp1WXOaLkhdEQEBHM89LIJjAaQqe4ZlJ_z9dJ3N9y/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("form-msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerText = "Thanks! Your message was sent successfully.";
+      msg.style.color = "lightgreen";
+      form.reset();
+      setTimeout(() => msg.innerText = "", 5000); // auto-clear message after 5 sec
+    })
+    .catch(error => {
+      msg.innerText = "Oops! Something went wrong.";
+      msg.style.color = "red";
+    });
+});
+</script>
+</body>
+</html>
